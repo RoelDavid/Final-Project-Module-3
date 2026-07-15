@@ -49,6 +49,14 @@ a {
     color: #6415ff;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
 /* 
 
 NAVBAR ↓
@@ -397,10 +405,74 @@ VALUES ↓
 
 #values .row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
+.hero__values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.plan__container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 30px;
+}
+
+.plan {
+    width:calc(100% / 3);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 1px;
+}
+
+.personal__plan {
+    border-top: 5px solid rgb(25, 250, 126);
+}
+
+.busines__plan {
+    background-color: #5e55dd;
+}
+
+.enterprise__plan {
+    border-top: 5px solid rgb(255, 131, 100);
+}
+
+.plan__info {
+    border-top: 1px solid #b0afb4;
+    border-bottom: 1px solid #b0afb4;
+}
+
+.bttn {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 999px;
+    background-color: #6415ff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.plan__info--title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info__list {
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin-top: 10px;
+}
+
+.buy-plan {
+    margin-bottom: 20px;
+}
 
 /*
 
@@ -413,6 +485,45 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.plan__title {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.billing__cycle {
+    margin: 10px;
+    color: #b0afb4;
+}
+
+.busines__plan--title,
+.busines__plan--price,
+.busines__plan--billing-cycle,
+.busines__plan--info__title,
+.busines__plan--feature {
+    color: white;
+}
+
+.busines-plan__button {
+    background-color: white;
+}
+
+.busines-plan__button a{
+    color: #5e55dd;
+}
+
+.personal-plan__button {
+    background-color: rgb(25, 250, 126);
+}
+
+.enterprise-plan__button {
+    background-color: rgb(255, 131, 100);
 }
 
 /* 
