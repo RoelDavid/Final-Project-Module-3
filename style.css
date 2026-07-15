@@ -405,11 +405,35 @@ VALUES ↓
 
 #values .row {
     display: flex;
+    align-items: center;
+}
+
+.values__container {
+    width: 50%;
+}
+
+.values__img {
+    width: 50%;
+}
+
+.value {
+    margin: 20px 0;
+}
+
+/*
+
+PRICING ↓
+
+*/
+
+
+#pricing .row {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero__values {
+.hero__pricing {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,13 +442,13 @@ VALUES ↓
 
 .plan__container {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    flex-wrap: wrap;
+    width: 80%;
     gap: 30px;
 }
 
 .plan {
-    width:calc(100% / 3);
+    width: 30%;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 1px 10px 1px;
@@ -472,19 +496,6 @@ VALUES ↓
 
 .buy-plan {
     margin-bottom: 20px;
-}
-
-/*
-
-PRICING ↓
-
-*/
-
-
-#pricing .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .plan__title {
@@ -535,8 +546,29 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+.testimonial__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.testimonial__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.user__img {
+    width: 80px;
+}
 
 /* 
 
@@ -544,20 +576,43 @@ START / CALL TO ACTION ↓
 
 */
 
-
-
 #start .row {
     position: relative;
     overflow: hidden;
+    background-color: #6415FF;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 300px;
+    border-radius:  5px;
 }
 
+.start__row h2 {
+    color: white;
+    margin: 20px;
+}
+
+.get-started {
+    background-color: rgb(255, 131, 100);
+    width: 120px;
+    height: 50px;;
+    border-radius:  999px;
+}
+
+.contact-us {
+    background-color: #6415FF;
+    width: 120px;
+    height: 50px;;
+    border-radius:  999px;
+    border: 1px solid white;
+}
 
 /* 
 
 FOOTER ↓
 
 */
-
 
 footer {
     padding: 96px 32px;
