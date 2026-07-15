@@ -637,6 +637,64 @@ footer {
     overflow: hidden;
 }
 
+.footer__card--container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__card a {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.footer__card--title {
+    color: white;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__logo img {
+    width: 40px;
+}
+
+.footer__logo p {
+    color: white;
+    font-weight: 700;
+}
+
+.copyright {
+    color: white;
+    font-family: cursive;
+}
+
+.footer__media--link i {
+    font-size: 40px;
+    color: white;
+}
+
+.footer__media--container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
 /* 
 
