@@ -266,10 +266,6 @@ FEATURES ↓
     text-align: center;
 }
 
-#features {
-    position: relative;
-}
-
 #features .row__narrow {
     display: flex;
     flex-direction: column;
@@ -373,17 +369,21 @@ STEPS ↓
 }
 
 .step {
-    display: grid;
-    grid-template-columns: 50px 1fr;
     column-gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .step__number {
-    grid-row: span 2;
     font-size: 32px;
     font-weight: 700;
     color: #b0afb4;
+}
+
+.step__content {
+    display: flex;
+    flex-direction: column;
 }
 
 .step__name {
@@ -393,7 +393,6 @@ STEPS ↓
 
 .step__para {
     margin: 8px 0 0;
-    line-height: 1.5;
 }
 
 
@@ -416,8 +415,24 @@ VALUES ↓
     width: 50%;
 }
 
+.values__list i {
+    color:#6415ff;
+    font-size: 40px;
+    width: 70px;
+}
+
 .value {
     margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.value__content {
+    margin: 0 20px;
+}
+
+.value__content p {
+    margin-top: 8px;
 }
 
 /*
@@ -476,9 +491,9 @@ PRICING ↓
     border: none;
     border-radius: 999px;
     background-color: #6415ff;
-    font-weight: 700;
+    
     cursor: pointer;
-    margin-top: 20px;
+    
 }
 
 .plan__info--title {
@@ -495,7 +510,7 @@ PRICING ↓
 }
 
 .buy-plan {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .plan__title {
