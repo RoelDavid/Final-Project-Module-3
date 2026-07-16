@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
+    font-family: "inter", sans-serif;
 }
 
 body {
@@ -558,32 +559,42 @@ TESTIMONIALS ↓
 
 */
 
-
 #testimonials .row {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.testimonial__wrapper {
+.testimonial__container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-    width: 100%;
-}
-
-.testimonial__card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 30%;
 }
 
-.user__img {
-    width: 80px;
-    margin: 10px 0;
+.testimonial__illustration,
+.testimonial__content  {
+    width: 50%;
+}
+
+.testimonial__image,
+.testimonial__content {
+    width: 50%;
+}
+
+.testimonial__user img{
+    width: 100px;
+}
+
+.testimonial__intro {
+    margin: 12px 0;
+}
+
+.testimonial__rate i {
+    color: goldenrod;
+    margin: 12px 0;
+}
+
+#testimonial__para {
+    margin: 12px 0;
 }
 
 /* 
@@ -830,6 +841,17 @@ MOBILE RESPONSIVENESS ↓
     }
     .plan {
         width: 300px;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonial__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial__image,
+    .testimonial__content {
+        width: 100%;
     }
 
     /* START */
