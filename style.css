@@ -209,7 +209,7 @@ header .row {
 }
 
 .get-started__container--para {
-margin: 20px 0;
+    margin: 20px 0;
 }
 
 .email__form {
@@ -324,7 +324,7 @@ QUALITY WORK ↓
 }
 
 .section__title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 30px;
     color: #6415ff;
 }
@@ -447,39 +447,40 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero__pricing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .plan__container {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     gap: 30px;
+    margin-top: 40px;
 }
 
 .plan {
-    width: 30%;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 1px 10px 1px;
+    display: flex;
+    flex-direction: column;
+    width:calc(100% / 3);
+    min-width: 200px;
+    max-width: 350px;
 }
 
 .personal__plan {
-    border-top: 5px solid rgb(25, 250, 126);
+    border-top: 5px solid #41B7B0;
 }
 
 .busines__plan {
-    background-color: #5e55dd;
+    background: linear-gradient(to right, #4F5BC7, #5867D5);
 }
 
 .enterprise__plan {
-    border-top: 5px solid rgb(255, 131, 100);
+    border-top: 5px solid #FD9E9E;
 }
 
 .plan__info {
@@ -492,7 +493,6 @@ PRICING ↓
     border: none;
     border-radius: 999px;
     background-color: #6415ff;
-    
     cursor: pointer;
     
 }
@@ -512,6 +512,10 @@ PRICING ↓
 
 .buy-plan {
     margin: 20px 0;
+}
+
+.buy-plan a {
+    font-weight: 700;
 }
 
 .plan__title {
@@ -546,11 +550,19 @@ PRICING ↓
 }
 
 .personal-plan__button {
-    background-color: rgb(25, 250, 126);
+    background: linear-gradient(to right, #41B7B0, #75DDD1);
+}
+
+.personal-plan__button a {
+    color: white;
 }
 
 .enterprise-plan__button {
-    background-color: rgb(255, 131, 100);
+    background: linear-gradient(to right, #F57171, #FD9E9E);
+}
+
+.enterprise-plan__button a {
+    color: white;
 }
 
 /* 
@@ -673,7 +685,7 @@ footer {
 
 .footer__card a {
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 20px;
     color: white;
 }
 
@@ -730,6 +742,17 @@ MOBILE RESPONSIVENESS ↓
     header .row {
         align-items: flex-end;
     }
+    .plan__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p {
+        font-size: clamp(20px, 1.5vw, 24px)
+    }
+    a {
+        font-size: clamp(20px, 1.5vw, 24px)
+    }
 }
 
 @media (max-width: 1024px) {
@@ -779,14 +802,14 @@ MOBILE RESPONSIVENESS ↓
     .email__form button {
          height: 100%;
          width: 80px;
-        padding: 0 24px;
-        font-size: 12px;
+         padding: 0 24px;
+         font-size: 16px;
     }
     .email__form input {
         flex: 1;
         height: 100%;
         padding: 0 0;
-        font-size: 14px;
+        font-size: 16px;
     }
     .section__title {
         font-size: 16px;
@@ -795,10 +818,10 @@ MOBILE RESPONSIVENESS ↓
         font-size: 28px;
     }
     .section__para {
-        font-size: 14px;
+        font-size: 16px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* FEATURE */
@@ -864,17 +887,17 @@ MOBILE RESPONSIVENESS ↓
         height: 40px;
     }
     .get-started a{
-        font-size: 14px;
+        font-size: 16px;
     }
     .contact-us {
         width: 120px;;
         height: 40px;
     }
     .contact-us a{
-        font-size: 14px;
+        font-size: 16px;
     }
      .contact-us a {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -930,7 +953,7 @@ MOBILE RESPONSIVENESS ↓
         font-size: 16px;
     }
     .footer__card a {
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
         flex-direction: column;
     }
@@ -963,5 +986,15 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         justify-content: space-between;
         gap: 10px;
+    }
+    .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
 }
